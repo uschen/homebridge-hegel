@@ -1,0 +1,38 @@
+{
+    "pluginAlias": "HegelHomebridgePlugin",
+    "pluginType": "platform",
+    "singular": true,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "description": "The name of your Hegel in HomeKit",
+                "type": "string",
+                "required": true,
+                "default": "Hegel Amplifer"
+            },
+            "model": {
+                "title": "Model",
+                "description": "The model of your Hegel Amplifier",
+                "type": "string",
+                "required": false,
+                "default": ""
+            },
+            "ip": {
+                "title": "IP / Hostname",
+                "description": "The IP address or host name of your Hegel, find or set in your router",
+                "type": "string",
+                "required": true,
+                "default": "192.168.1.11"
+            },
+            "port": {
+                "title": "Port",
+                "description": "Telnet port of your Hegel Amplifer",
+                "placeholder": "50001",
+                "type": "number",
+                "required": false
+            }
+        }
+    }
+}
